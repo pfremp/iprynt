@@ -127,3 +127,22 @@ nav li {
     margin-left: -13px;
 }
 
+.text-container {
+    margin: 20px 20%;
+    font-family: "open-sans", sans-serif, Arial;
+    font-weight: 300;
+    text-align: center;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.light-section {
+    
+}
+
+.section-heading {
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
