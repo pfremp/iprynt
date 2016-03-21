@@ -171,12 +171,13 @@ nav li {
     height: 50px;
     width: 50px;
     margin: 0 auto;
+    
 }
 
 .services {
-    border-color: aqua;
+/*    border-color: aqua;*/
     border-width: medium;
-    background-color: beige;
+/*    background-color: beige;*/
 /*    clear: left;*/
     overflow: auto;
 /*    padding: 10px 4.2% 10px 4.2%;*/
@@ -187,7 +188,29 @@ nav li {
 
 
 
+.portfolio {
+    width: 
+}
 
+
+.portfolio-item {
+    background-color: lightgray;
+    float: left;
+    width: 25%;
+    padding-top: 25%;
+/*    height: 200px;    */
+}
+
+.dark {
+    background-color: darkgrey;
+}
+
+.portfolio-item > img {
+/*
+    width: 25%;
+    height: 25%;
+*/
+}
 
 
 
