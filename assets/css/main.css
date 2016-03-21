@@ -162,16 +162,16 @@ nav li {
 
 .service-box h1 {
     font-size: 22px;
+    margin: 20px 0;
 }
 
-/*
 .service-icon {
     display: block;
-    background-color: black;
+/*    background-color: black;*/
     height: 50px;
     width: 50px;
+    margin: 0 auto;
 }
-*/
 
 .services {
     border-color: aqua;
