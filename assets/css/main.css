@@ -68,7 +68,7 @@ Border Setting
 
 
 body {
-    font-family:;
+    font-family:"open-sans", sans-serif, Arial;
 }
 
 
@@ -85,7 +85,7 @@ body {
 }
 
 nav {
-    font-family: "open-sans", sans-serif, Arial;
+/*    font-family: "open-sans", sans-serif, Arial;*/
     font-size: 16px;
     color: #4c4c4c;
     text-transform: uppercase;
@@ -111,7 +111,7 @@ nav li {
     clear: both;
     font-size: 70px;
     color: #4c4c4c;
-    font-family: "open-sans", sans-serif, Arial;
+/*    font-family: "open-sans", sans-serif, Arial;*/
     font-weight: 500;
     
 }
@@ -128,8 +128,8 @@ nav li {
 }
 
 .text-container {
-    margin: 20px 20%;
-    font-family: "open-sans", sans-serif, Arial;
+    margin: 80px 20% 40px 20%;
+/*    font-family: "open-sans", sans-serif, Arial;*/
     font-weight: 300;
     text-align: center;
     line-height: 25px;
@@ -145,4 +145,63 @@ nav li {
     font-weight: 400;
     padding-bottom: 20px;
 }
+
+.service-box {
+    width: 33.3333333333%;
+/*    min-width: 250px;*/
+    min-height: 300px;
+    float: left;
+/*    padding: 50px;*/
+/*    background-color: black;*/
+    border: 10px;
+    border-color: red;
+    text-align: center;
+    padding: 10px 4.2% 10px 4.2%;
+    min-width: 288px;
+}
+
+.service-box h1 {
+    font-size: 22px;
+}
+
+/*
+.service-icon {
+    display: block;
+    background-color: black;
+    height: 50px;
+    width: 50px;
+}
+*/
+
+.services {
+    border-color: aqua;
+    border-width: medium;
+    background-color: beige;
+/*    clear: left;*/
+    overflow: auto;
+/*    padding: 10px 4.2% 10px 4.2%;*/
+    margin: 40px 0 40px 0;
+    padding: 0 2.1% 0 2.1%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
