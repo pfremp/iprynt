@@ -1,6 +1,10 @@
 /* Main stylesheet */
 
-/* CSS Reset */
+/* CSS syntax follow BEM convention (http://getbem.com/)*/
+
+
+
+/*-------CSS Reset-------*/
 
 /* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
   License: none (public domain)
@@ -69,8 +73,45 @@ Border Setting
 
 body {
     font-family:"open-sans", sans-serif, Arial;
+    font-weight: 300;
+    text-align: center;
+    line-height: 25px;
+    font-size: 20px;
+    color: #4c4c4c;
 }
 
+a {
+    text-decoration: none;
+    color: #4c4c4c; 
+}
+
+a:hover {
+    color: #fff;
+}
+
+
+/*-----Header-----*/
+
+.header__logo {
+    display: block;
+    padding: 75px 0 20px 45px;
+    float: left;
+}
+
+.header__nav {
+    font-size: 16px;
+    text-transform: uppercase;
+    float: right;
+    margin: 94px 75px 20px 0;
+}
+
+.header__nav li {
+    display: inline;
+    padding-left: 22px;
+}
+
+
+/*-----Banner-----*/
 
 .banner {
     width: 100%;
@@ -78,31 +119,9 @@ body {
     background-color: #EFEFEF;
 }
 
-.logo {
-    display: block;
-    padding: 75px 0 20px 45px;
-    float: left;
-}
-
-nav {
-/*    font-family: "open-sans", sans-serif, Arial;*/
-    font-size: 16px;
-    color: #4c4c4c;
-    text-transform: uppercase;
-    float: right;
-    margin: 94px 75px 20px 0;
-    
-}
-
-nav li {
-    display: inline;
-    padding-left: 22px;
-}
-
-.tagline {
+.banner__tagline {
     display: block;
     position: absolute;
-    text-align: center;
     top: 40%;
     bottom: 0;
     left: 0;
@@ -110,13 +129,10 @@ nav li {
     margin: auto;
     clear: both;
     font-size: 70px;
-    color: #4c4c4c;
-/*    font-family: "open-sans", sans-serif, Arial;*/
-    font-weight: 500;
-    
+    font-weight: 500;    
 }
 
-.banner-arrow {
+.banner__arrow {
     display: block;
     position: absolute;
     top: 90%;
@@ -127,81 +143,59 @@ nav li {
     margin-left: -13px;
 }
 
-.text-container {
-    margin: 80px 20% 40px 20%;
-/*    font-family: "open-sans", sans-serif, Arial;*/
-    font-weight: 300;
-    text-align: center;
-    line-height: 25px;
-    font-size: 20px;
-}
 
-.light-section {
-    
-}
+/*-----Section-----*/
 
-.section-heading {
+.section__heading {
     font-size: 30px;
     font-weight: 400;
     padding-bottom: 20px;
 }
 
-.service-box {
-    width: 33.3333333333%;
-/*    min-width: 250px;*/
-    min-height: 300px;
-    float: left;
-/*    padding: 50px;*/
-/*    background-color: black;*/
-    border: 10px;
-    border-color: red;
-    text-align: center;
-    padding: 10px 4.2% 10px 4.2%;
-    min-width: 288px;
-}
-
-.service-box h1 {
+.section__subheading {
     font-size: 22px;
     margin: 20px 0;
 }
 
-.service-icon {
-    display: block;
-/*    background-color: black;*/
-    height: 50px;
-    width: 50px;
-    margin: 0 auto;
-    
+.section {
+    margin: 80px 20% 40px 20%;
 }
 
-.services {
-/*    border-color: aqua;*/
-    border-width: medium;
-/*    background-color: beige;*/
-/*    clear: left;*/
+.section--services {
     overflow: auto;
-/*    padding: 10px 4.2% 10px 4.2%;*/
     margin: 40px 0 40px 0;
     padding: 0 2.1% 0 2.1%;
-    
+}
+
+.section__service {
+    width: 33.3333333333%;
+    min-height: 300px;
+    float: left;
+    padding: 10px 4.2% 10px 4.2%;
+}
+
+.section__service-icon {
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
 }
 
 
+/*-----Portfolio-----*/
 
-.portfolio {
+.section--portfolio {
     overflow: hidden;
 }
 
-
-.portfolio-item {
+.section__portfolio-item {
     background-color: lightgray;
     float: left;
     width: 25%;
     padding-top: 20%;
-/*    height: 200px;    */
 }
 
-.dark {
+.section__portfolio-item--dark {
     background-color: darkgrey;
 }
 
@@ -211,50 +205,46 @@ nav li {
 }
 
 
-.form-container {
+/*-----Form-----*/
+
+.form {
     display: block;
     margin: 10px;
     margin-bottom: 150px;
-    
 }
 
-input, textarea {
+.form__input {
     display: block;
     height: 50px;
     margin: 0 auto;
-    width: 50%;
     margin-bottom: 20px;
+    width: 50%;
+    padding-left: 10px;
     font-size: 25px;
     background-color: darkgray;
     border-style: none;
-   
     z-index: -2;
-    
+    color: #ffffff;
 }
 
-textarea {
-    display: block;
+.form__textarea {
     height: 200px;
     resize: none;
-    color: #ffffff;
-   
-/*
-    width: 50%;
-    max-width: 50%;
-*/
-
 }
 
-button {
+.form__button {
     margin-left: 25%;
     background-color: #4C4C4C;
     border-style: none;
-    width: 10%;
+    width: 150px;
     height: 50px;
     font-size: 22px;
     color: #ffffff;
+    float: left;
 }
 
+
+/*-----Form input-----*/
 ::-webkit-input-placeholder {
    color: #4C4C4C;
 }
@@ -272,22 +262,19 @@ button {
 }
 
 
+/*-----Footer------*/
 
-
-
-
-footer {
+.footer {
     display: block;
     background-color: lightgray;
     height: 100px;
-
+/*    vertical-align: middle;*/
 }
 
+.footer__text {
+    line-height: 100px; 
+}
 
-
-
-
-
-
-
-
+.footer__text--bold {
+    font-weight: 700;
+}
