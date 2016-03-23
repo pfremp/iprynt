@@ -189,18 +189,27 @@ a:hover {
 }
 
 .section__portfolio-item {
-    background-color: lightgray;
+/*    background-color: lightgray;*/
     float: left;
     width: 25%;
-    padding-top: 20%;
+    height: auto;
+/*    height: 25%:*/
+/*    padding-top: 20%;*/
+    
 }
 
 .section__portfolio-item--dark {
-    background-color: darkgrey;
+/*    background-color: darkgrey;*/
 }
 
-.portfolio-item > img {
+.section__portfolio-item > img {
+    display: block;
+/*    position: relative;*/
     width: 100%;
+    height: auto;
+/*    max-width: 100%;*/
+/*    height: auto;*/
+/*    object-fit: contain;*/
 
 }
 
