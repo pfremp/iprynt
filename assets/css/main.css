@@ -75,8 +75,8 @@ body {
     font-family:"open-sans", sans-serif, Arial;
     font-weight: 300;
     text-align: center;
-    line-height: 25px;
-    font-size: 20px;
+    line-height: 23px;
+    font-size: 17px;
     color: #4c4c4c;
 }
 
@@ -88,6 +88,78 @@ a {
 a:hover {
     color: #fff;
 }
+
+/*-----Form input-----*/
+::-webkit-input-placeholder {
+   color: #4C4C4C;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #4C4C4C;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #4C4C4C;  
+}
+
+:-ms-input-placeholder {  
+   color: #4C4C4C;  
+}
+
+
+/*-----Footer------*/
+
+.footer {
+    display: block;
+    background-color: lightgray;
+    height: 50px;
+/*    vertical-align: middle;*/
+}
+
+.footer__text {
+    line-height: 50px; 
+}
+
+.footer__text--bold {
+    font-weight: 700;
+}
+
+/*-----Form-----*/
+
+.form {
+    display: block;
+    margin: 10px;
+    margin-bottom: 150px;
+}
+
+.form__input {
+    display: block;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    font-size: 25px;
+    background-color: darkgray;
+    border-style: none;
+    z-index: -2;
+    color: #ffffff;
+}
+
+.form__textarea {
+    height: 200px;
+    resize: none;
+}
+
+.form__button {
+    background-color: #4C4C4C;
+    border-style: none;
+    width: 150px;
+    height: 50px;
+    font-size: 22px;
+    color: #ffffff;
+    
+}
+
 
 
 
@@ -116,6 +188,8 @@ a:hover {
 /*        visibility: collapse;*/
     
     }
+    
+/*-----Banner-----*/
     
     .banner {
         width: 100%;
@@ -153,6 +227,66 @@ a:hover {
         margin-left: -13px;
     }
 
+    /*-----Section-----*/
+
+    .section__heading {
+        font-size: 30px;
+        font-weight: 400;
+        padding-bottom: 20px;
+    }
+
+    .section__subheading {
+        font-size: 22px;
+        margin: 20px 0;
+    }
+
+    .section {
+        margin: 60px 10% 40px 10%;
+    }
+
+    .section--services {
+        overflow: auto;
+        margin: 40px 0 40px 0;
+        padding: 0 2.1% 0 2.1%;
+    }
+
+    .section__service {
+        width: 100%;
+        min-height: 300px;
+        padding: 10px 4.2% 60px 4.2%;
+    }
+
+    .section__service-icon {
+        display: block;
+        height: 65px;
+/*        width: 100px;*/
+        margin: 0 auto;
+    }
+
+    /*-----Portfolio-----*/
+
+    .section--portfolio {
+        overflow: hidden;
+    }
+
+    .section__portfolio-item {
+        float: left;
+        width: 50%;
+        height: auto;
+    }
+
+    .section__portfolio-item > img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+    /*-------Form--------*/
+    
+    .form__input {
+        width: 90%;
+    }
+
 
 
 }
@@ -179,6 +313,11 @@ a:hover {
     display: inline;
     padding-left: 22px;
 }
+    
+.header__toggle {
+    display: none;
+
+}
 
 
 /*-----Banner-----*/
@@ -200,6 +339,10 @@ a:hover {
     clear: both;
     font-size: 70px;
     font-weight: 500;    
+}
+    
+.banner__tagline--mobile {
+    display: none;
 }
 
 .banner__arrow {
@@ -270,79 +413,22 @@ a:hover {
     height: auto;
 }
 
+    /*-------Form--------*/
+    
+    .form__input {
+        width: 50%;
+    }
 
-/*-----Form-----*/
-
-.form {
-    display: block;
-    margin: 10px;
-    margin-bottom: 150px;
-}
-
-.form__input {
-    display: block;
-    height: 50px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    width: 50%;
-    padding-left: 10px;
-    font-size: 25px;
-    background-color: darkgray;
-    border-style: none;
-    z-index: -2;
-    color: #ffffff;
-}
-
-.form__textarea {
-    height: 200px;
-    resize: none;
-}
-
-.form__button {
-    margin-left: 25%;
-    background-color: #4C4C4C;
-    border-style: none;
-    width: 150px;
-    height: 50px;
-    font-size: 22px;
-    color: #ffffff;
-    float: left;
+    .form__button {
+        margin-left: 25%;
+        float: left;
 }
 
 
-/*-----Form input-----*/
-::-webkit-input-placeholder {
-   color: #4C4C4C;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-   color: #4C4C4C;  
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   color: #4C4C4C;  
-}
-
-:-ms-input-placeholder {  
-   color: #4C4C4C;  
-}
 
 
-/*-----Footer------*/
 
-.footer {
-    display: block;
-    background-color: lightgray;
-    height: 100px;
-/*    vertical-align: middle;*/
-}
 
-.footer__text {
-    line-height: 100px; 
-}
 
-.footer__text--bold {
-    font-weight: 700;
-}
     
 }
