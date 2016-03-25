@@ -90,6 +90,76 @@ a:hover {
 }
 
 
+
+@media only screen and (max-width: 480px) {
+    
+    .header {
+        padding-top: 20px;
+    }
+    
+    .header__logo {
+        display: inline-block;
+        margin: 0 auto;
+        
+    }
+    
+    .header__toggle {
+        position: absolute;
+        width: 30px;
+        right: 20px;
+        margin-top: 8px;
+        
+    }
+    
+    .header__nav ul {
+        display: none;
+/*        visibility: collapse;*/
+    
+    }
+    
+    .banner {
+        width: 100%;
+        height: 100vh; 
+        background-color: #EFEFEF;
+    }
+    
+    .banner__tagline {
+        display: none;
+    }
+    
+    .banner__tagline--mobile {
+        display: block;
+        position: absolute;
+        top: 30%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        clear: both;
+        font-size: 40px;
+        line-height: 65px;
+        font-weight: 500;    
+      
+    }
+    
+    .banner__arrow {
+        display: block;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        width: 52px;
+        height: 26px;
+        margin-top: -26px;
+        margin-left: -13px;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 481px) {
+
+
 /*-----Header-----*/
 
 .header__logo {
@@ -189,25 +259,15 @@ a:hover {
 }
 
 .section__portfolio-item {
-/*    background-color: lightgray;*/
     float: left;
     width: 25%;
     height: auto;
-/*    height: 25%:*/
-/*    padding-top: 20%;*/
-    
-}
-
-.section__portfolio-item--dark {
-/*    background-color: darkgrey;*/
 }
 
 .section__portfolio-item > img {
     display: block;
     width: 100%;
     height: auto;
-
-
 }
 
 
@@ -283,4 +343,6 @@ a:hover {
 
 .footer__text--bold {
     font-weight: 700;
+}
+    
 }
