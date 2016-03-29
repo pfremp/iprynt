@@ -220,12 +220,12 @@ a:hover {
     .banner__arrow {
         display: block;
         position: absolute;
-        top: 85%;
-        left: 50%;
+        top: 80%;
+        left: 45%;
         width: 52px;
         height: 26px;
-        margin-top: -26px;
-        margin-left: -13px;
+/*        margin-top: -26px;*/
+/*        margin-left: -13px;*/
     }
 
     /*-----Section-----*/
