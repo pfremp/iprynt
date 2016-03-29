@@ -172,14 +172,15 @@ a:hover {
     .header__logo {
         display: inline-block;
         margin: 0 auto;
+        width: 170px;
         
     }
     
     .header__toggle {
         position: absolute;
-        width: 30px;
+        width: 20px;
         right: 20px;
-        margin-top: 8px;
+        margin-top: 7px;
         
     }
     
@@ -219,7 +220,7 @@ a:hover {
     .banner__arrow {
         display: block;
         position: absolute;
-        top: 90%;
+        top: 85%;
         left: 50%;
         width: 52px;
         height: 26px;
