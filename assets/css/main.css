@@ -138,7 +138,6 @@ a:hover {
     margin: 0 auto;
     margin-bottom: 20px;
     padding-left: 10px;
-    font-size: 25px;
     background-color: darkgray;
     border-style: none;
     z-index: -2;
@@ -220,10 +219,11 @@ a:hover {
     .banner__arrow {
         display: block;
         position: absolute;
-        top: 80%;
-        left: 45%;
+        top: 75%;
+        left: 44.166%;
         width: 52px;
         height: 26px;
+/*        margin: 0 auto;*/
 /*        margin-top: -26px;*/
 /*        margin-left: -13px;*/
     }
@@ -286,6 +286,8 @@ a:hover {
     
     .form__input {
         width: 90%;
+        font-size: 18px;
+
     }
 
 
@@ -418,6 +420,8 @@ a:hover {
     
     .form__input {
         width: 50%;
+   `    font-size: 25px;
+
     }
 
     .form__button {
