@@ -12,12 +12,13 @@
         <section class="banner">
             <header class="header">
                 <a href="index.html"><img class="header__logo" src="assets/images/logo.png"></a> 
-                <a href=""><img class="header__toggle" src="assets/images/toggle_b.png"></a>
+                <a><img class="header__toggle" src="assets/images/toggle_b.png"></a>
                 <nav class="header__nav">
                     <ul>
-                        <li>About</li>
-                        <li>Services</li>
-                        <li>Contact</li>
+                        <li class="header__nav-li"><a href="#about-us" target="_self">About</a></li>
+                        <li class="header__nav-li"><a href="#services" target="_self">Services</a></li>
+                        <li class="header__nav-li"><a href="#portfolio" target="_self">Our Work</a></li>
+                        <li class="header__nav-li"><a href="#contact" target="_self">Contact</a></li>
                     </ul>
                 </nav>
             </header>
@@ -35,7 +36,7 @@
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </section>
         <main>
-            <section class="section--services">
+            <section class="section--services" id="services">
                 <h1 class="section__heading section">Services</h1>
                 <div class="section__service">
                     <img src="assets/images/printing_icon.png" class="section__service-icon">
@@ -54,7 +55,7 @@
                 </div>
             </section>
 
-            <section class="section--portfolio">
+            <section class="section--portfolio" id="portfolio">
                 <h1 class="section__heading section">Our Work</h1>
                 <div class="section__portfolio-item">
                     <img src="assets/images/iprynt_portfolio_3.jpg">
@@ -106,4 +107,8 @@
             <p class="footer__text">Copyright &copy; 2016 <snan class="footer__text--bold"><a href="#">iprynt ltd.</a></snan></p>
         </footer>        
     </body>
+    
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="assets/js/menu.js"></script>
+    
 </html>
