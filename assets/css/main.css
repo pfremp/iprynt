@@ -410,6 +410,10 @@ a:hover {
             font-weight: 500; 
     }
     
+    .banner__tagline.open {
+        z-index: -1;
+    }
+    
     .banner__tagline--mobile {
         display: none;
         position: absolute;
@@ -551,6 +555,10 @@ a:hover {
     font-size: 50px;
     font-weight: 500;    
 }
+    
+    .banner__tagline.open {
+        z-index: -1;
+    }
     
 .banner__tagline--mobile {
     display: none;
