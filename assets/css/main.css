@@ -89,6 +89,11 @@ a:hover {
     color: #fff;
 }
 
+a:active {
+    background: red;
+    font-weight: 500;
+}
+
 /*-----Form input-----*/
 ::-webkit-input-placeholder {
    color: #4C4C4C;
@@ -312,7 +317,7 @@ a:hover {
         height: auto;
     }
 
-    .section__portfolio-item > img {
+    .section__portfolio-item img {
         display: block;
         width: 100%;
         height: auto;
@@ -327,7 +332,7 @@ a:hover {
 }
 
 
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
     
     .header {
         padding-top: 20px;
@@ -490,7 +495,7 @@ a:hover {
         height: auto;
     }
 
-    .section__portfolio-item > img {
+    .section__portfolio-item img {
         display: block;
         width: 100%;
         height: auto;
@@ -556,9 +561,6 @@ a:hover {
     font-weight: 500;    
 }
     
-    .banner__tagline.open {
-        z-index: -1;
-    }
     
 .banner__tagline--mobile {
     display: none;
@@ -624,7 +626,7 @@ a:hover {
         height: auto;
     }
 
-    .section__portfolio-item > img {
+    .section__portfolio-item img {
         display: block;
         width: 100%;
         height: auto;
@@ -765,7 +767,7 @@ a:hover {
     height: auto;
 }
 
-.section__portfolio-item > img {
+.section__portfolio-item img {
     display: block;
     width: 100%;
     height: auto;
