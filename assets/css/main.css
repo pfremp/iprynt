@@ -90,7 +90,6 @@ a:hover {
 }
 
 a:active {
-    background: red;
     font-weight: 500;
 }
 
@@ -162,6 +161,22 @@ a:active {
     font-size: 22px;
     color: #ffffff;
     
+}
+
+.form__confirmation {
+    display: block;
+    position: fixed;
+    top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    left: 0;
+    right: 0;
+    background-color: darkgray;
+    padding: 30px;
+    font-size: 30px;
+    color: white;
+    display: none;
+
 }
 
 
@@ -551,7 +566,7 @@ a:active {
 .banner__tagline {
     display: block;
     position: absolute;
-    top: 40%;
+    top: 45%;
     bottom: 0;
     left: 0;
     right: 0;
@@ -691,7 +706,7 @@ a:active {
 .banner__tagline {
     display: block;
     position: absolute;
-    top: 40%;
+    top: 45%;
     bottom: 0;
     left: 0;
     right: 0;
@@ -784,13 +799,8 @@ a:active {
     .form__button {
         margin-left: 25%;
         float: left;
-}
-
-
-
-
-
-
+    }    
+        
 
     
 }
