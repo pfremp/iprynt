@@ -1,6 +1,6 @@
 /* Main stylesheet */
 
-/* CSS syntax follow BEM convention (http://getbem.com/)*/
+/* CSS syntax follows BEM convention (http://getbem.com/)*/
 
 
 
@@ -110,14 +110,18 @@ a:active {
    color: #4C4C4C;  
 }
 
+/* Change autofill background colour ;) */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #A9A9A9 inset;
+    -webkit-text-fill-color: #fff;
+}
+
 
 /*-----Footer------*/
-
 .footer {
     display: block;
-    background-color: lightgray;
+    background-color: #D3D3D3;
     height: 50px;
-/*    vertical-align: middle;*/
 }
 
 .footer__text {
@@ -129,7 +133,6 @@ a:active {
 }
 
 /*-----Form-----*/
-
 .form {
     display: block;
     margin: 10px;
@@ -142,7 +145,7 @@ a:active {
     margin: 0 auto;
     margin-bottom: 20px;
     padding-left: 10px;
-    background-color: darkgray;
+    background-color: #A9A9A9;
     border-style: none;
     z-index: -2;
     color: #ffffff;
@@ -179,11 +182,10 @@ a:active {
 
 }
 
-
-
-
+// Mobile Devivces
 @media only screen and (max-width: 480px) {
     
+    /*------Header------*/
     .header {
         padding-top: 20px;
     }
@@ -210,42 +212,27 @@ a:active {
         overflow: hidden;
         background: #505050;
         height: 0;
-        color: lightgray;
+        color: #D3D3D3;
         text-transform: uppercase;
         font-weight: 300;
-/*        padding: 5px 0;*/
-    
     }
     
     .header__nav ul.open {
         height: auto;
     }
     
-/*
-    header__nav li:first-child, header__nav ul:last-child {
-        padding: 10px 0;
-    }
-*/
-    
-
-    
     .header__nav-li {
         padding: 5px 0;
     }
     
     .header__nav-li a {
-        color: lightgray;
+        color: #D3D3D3;
         font-size: 20px;
         line-height: 40px;
     }
     
     
-    
-    
-
-    
-/*-----Banner-----*/
-    
+    /*------Banner------*/
     .banner {
         width: 100%;
         height: 100vh; 
@@ -265,8 +252,8 @@ a:active {
         right: 0;
         margin: auto;
         clear: both;
-        font-size: 40px;
-        line-height: 65px;
+        font-size: 5vh;
+        line-height: 7.5vh;
         font-weight: 500;    
       
     }
@@ -285,7 +272,6 @@ a:active {
     }
 
     /*-----Section-----*/
-
     .section__heading {
         font-size: 30px;
         font-weight: 400;
@@ -316,12 +302,10 @@ a:active {
     .section__service-icon {
         display: block;
         height: 65px;
-/*        width: 100px;*/
         margin: 0 auto;
     }
 
     /*-----Portfolio-----*/
-
     .section--portfolio {
         overflow: hidden;
     }
@@ -339,7 +323,6 @@ a:active {
     }
     
     /*-------Form--------*/
-    
     .form__input {
         width: 90%;
         font-size: 18px;
@@ -349,6 +332,7 @@ a:active {
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     
+    /*------Header------*/
     .header {
         padding-top: 20px;
     }
@@ -356,7 +340,6 @@ a:active {
     .header__logo {
         display: inline-block;
         margin: 0 auto;
-        
     }
     
     .header__toggle {
@@ -375,31 +358,21 @@ a:active {
         overflow: hidden;
         background: #505050;
         height: 0;
-        color: lightgray;
+        color: #D3D3D3;
         text-transform: uppercase;
         font-weight: 300;
-/*        padding: 5px 0;*/
-    
     }
     
     .header__nav ul.open {
         height: auto;
     }
     
-/*
-    header__nav li:first-child, header__nav ul:last-child {
-        padding: 10px 0;
-    }
-*/
-    
-
-    
     .header__nav-li {
         padding: 5px 0;
     }
     
     .header__nav-li a {
-        color: lightgray;
+        color: #D3D3D3;
         font-size: 20px;
         line-height: 40px;
     }
@@ -409,8 +382,7 @@ a:active {
     
 
     
-/*-----Banner-----*/
-    
+    /*-----Banner-----*/
     .banner {
         width: 100%;
         height: 100vh; 
@@ -446,7 +418,6 @@ a:active {
         font-size: 40px;
         line-height: 65px;
         font-weight: 500;    
-      
     }
     
     .banner__tagline--mobile.open {
@@ -463,7 +434,6 @@ a:active {
     }
 
     /*-----Section-----*/
-
     .section__heading {
         font-size: 30px;
         font-weight: 400;
@@ -494,12 +464,11 @@ a:active {
     .section__service-icon {
         display: block;
         height: 65px;
-/*        width: 100px;*/
         margin: 0 auto;
     }
 
+    
     /*-----Portfolio-----*/
-
     .section--portfolio {
         overflow: hidden;
     }
@@ -516,85 +485,76 @@ a:active {
         height: auto;
     }
     
-    /*-------Form--------*/
     
+    /*-------Form--------*/
     .form__input {
         width: 90%;
         font-size: 18px;
     }
-    
-
 }
 
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-/*-----Header-----*/
+    /*-----Header-----*/
+    .header__logo {
+        display: block;
+        padding: 40px 0 40px 45px;
+        margin: 0 auto;
+    }
 
-.header__logo {
-    display: block;
-    padding: 40px 0 40px 45px;
-    margin: 0 auto;
-/*    float: left;*/
-}
+    .header__nav {
+        font-size: 16px;
+        text-transform: uppercase;
+        margin: 0 auto;
+    }
 
-.header__nav {
-    font-size: 16px;
-    text-transform: uppercase;
-/*    float: right;*/
-    margin: 0 auto;
-}
+    .header__nav li {
+        display: inline;
+        padding-left: 22px;
+    }
 
-.header__nav li {
-    display: inline;
-    padding-left: 22px;
-}
-    
-.header__toggle {
-    display: none;
-
-}
+    .header__toggle {
+        display: none;
+    }
 
 
-/*-----Banner-----*/
+    /*-----Banner-----*/
+    .banner {
+        width: 100%;
+        height: 100vh; 
+        background-color: #EFEFEF;
+    }
 
-.banner {
-    width: 100%;
-    height: 100vh; 
-    background-color: #EFEFEF;
-}
+    .banner__tagline {
+        display: block;
+        position: absolute;
+        top: 45%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        clear: both;
+        font-size: 50px;
+        font-weight: 500;    
+    }
 
-.banner__tagline {
-    display: block;
-    position: absolute;
-    top: 45%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    clear: both;
-    font-size: 50px;
-    font-weight: 500;    
-}
-    
-    
-.banner__tagline--mobile {
-    display: none;
-}
+    .banner__tagline--mobile {
+        display: none;
+    }
 
-.banner__arrow {
-    display: block;
-    position: absolute;
-    top: 90%;
-    left: 49%;
-    width: 52px;
-    height: 26px;
-    margin-top: -26px;
-    margin-left: -13px;
-}
+    .banner__arrow {
+        display: block;
+        position: absolute;
+        top: 90%;
+        left: 49%;
+        width: 52px;
+        height: 26px;
+        margin-top: -26px;
+        margin-left: -13px;
+    }
 
 
-/*-----Section-----*/
-
+    /*-----Section-----*/
     .section__heading {
         font-size: 30px;
         font-weight: 400;
@@ -625,12 +585,11 @@ a:active {
     .section__service-icon {
         display: block;
         height: 65px;
-/*        width: 100px;*/
         margin: 0 auto;
     }
 
+    
     /*-----Portfolio-----*/
-
     .section--portfolio {
         overflow: hidden;
     }
@@ -647,8 +606,8 @@ a:active {
         height: auto;
     }
     
-    /*-------Form--------*/
     
+    /*-------Form--------*/
     .form__input {
         width: 70%;
         font-size: 18px;
@@ -658,9 +617,6 @@ a:active {
         margin-left: 15%;
         float: left;
     }
-    
-    
-    
 }
 
 
