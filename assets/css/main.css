@@ -171,10 +171,10 @@ a:active {
     margin-right: 10%;
     left: 0;
     right: 0;
-    background-color: darkgray;
+    background-color: aqua;
     padding: 30px;
     font-size: 30px;
-    color: white;
+    color: #4c4c4c;
     display: none;
 
 }
